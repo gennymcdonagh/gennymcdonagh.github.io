@@ -1,29 +1,35 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap');
 
 body {
   background:linear-gradient(0deg,rgba(206,237,255,0.5),rgba(206,237,255,0.5)),url(img/bg.png);
 	color: #304956;
-    font-size: 18px;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 400px) {
-    body {
-        font-size: 24px;
-    }
+a {
+  color: #304956;
 }
 
-body a {
-    color: #304956;
+a:hover{
+  color: #FE0D00;
 }
 
-body a:hover{
-    color: #FE0D00;
+section {
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+@media (min-width: 500px) {
+  section {
+      font-size: 24px;
+  }
 }
 
 .name {
@@ -31,9 +37,18 @@ body a:hover{
     fill: red;
 }
 
-section {
-    max-width: 550px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+@media (min-width: 700px) {
+  .name {
+    width: 500px;
+  }
+}
+
+@media (max-width: 500px) {
+  .subheading span {
+    display: block;
+  }
+
+  .subheading .hyphen {
+    display: none;
+  }
 }
